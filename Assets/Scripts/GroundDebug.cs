@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GroundGenerator : PlaneGenerator
+public class GroundDebug : PlaneGenerator
 {
     [SerializeField] private float yLevel;
     
@@ -13,9 +13,14 @@ public class GroundGenerator : PlaneGenerator
     {
         GenerateMesh(yLevel);
         baseVertices = mesh.vertices;
+        //GenerateTerrain();
+    }
+
+    void Update()
+    {
         GenerateTerrain();
     }
-    
+
     void GenerateTerrain()
     {
         for (int i = 0; i < vertices.Length; ++i)
@@ -39,8 +44,5 @@ public class GroundGenerator : PlaneGenerator
         
         mesh.vertices = vertices;
         mesh.RecalculateNormals();
-        
-        GetComponent<MeshCollider>().sharedMesh = mesh;
     }
 }
-

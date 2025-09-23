@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ground
-  m_Shader: {fileID: -6465566751694194690, guid: 6e8046fbdef16e1439fef0a5a84d1520, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 7fe21596650cb504d81c280222c7ce57, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -45,6 +45,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 3829d1b682a0a584ebfabcb838716beb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BeachTex:
+        m_Texture: {fileID: 2800000, guid: 3829d1b682a0a584ebfabcb838716beb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -65,6 +69,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GrassTex:
+        m_Texture: {fileID: 2800000, guid: 2a5c60c062936414280f1071e41d6b4a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Island:
         m_Texture: {fileID: 2800000, guid: 2a5c60c062936414280f1071e41d6b4a, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -75,6 +83,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 76f287402e607f9478593bf201ce1900, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,6 +102,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SeaBottem:
+        m_Texture: {fileID: 2800000, guid: 4a23d204d3959d94daa4b40020ba833d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SeaBottemTex:
         m_Texture: {fileID: 2800000, guid: 4a23d204d3959d94daa4b40020ba833d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -115,6 +131,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _BeachStart: 0.25
+    - _BeachToGrassHeight: 0.38
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BlendSize: 1.52
@@ -141,13 +158,16 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _SeaToBeachHeight: -0.34
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _TextureSize: 32
     - _Tiling: 1
+    - _TransitionWidth: 0.41
     - _WaterLevel: 0
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
@@ -157,5 +177,6 @@ Material:
     - _Color: {r: 1, g: 0.7620948, b: 0.4056602, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
