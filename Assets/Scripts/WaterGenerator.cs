@@ -6,17 +6,26 @@ public class WaterGenerator : PlaneGenerator
     [SerializeField] private float waveAmplitude;
     [SerializeField] private float waveFrequency;
     [SerializeField] private float waveSpeed;
+
+    [SerializeField] private Transform player;
     
     private Vector3[] baseVertices;
+    private float range;
     void Awake()
     {
         GenerateMesh();
         baseVertices = mesh.vertices;
+
+        range = width / 2 * cellSize;
     }
 
     void Update()
     {
-        AnimateWave();
+        if (player.position.x >= transform.position.x - range && player.position.x <= transform.position.x + range &&
+            player.position.z >= transform.position.z - range && player.position.z <= transform.position.z + range)
+        {
+            AnimateWave();
+        }
     }
 
     void AnimateWave()

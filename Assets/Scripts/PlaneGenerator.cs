@@ -3,9 +3,9 @@ using UnityEngine;
 public class PlaneGenerator : MonoBehaviour
 {
     [Header("plane settings")]
-    [SerializeField] private int width;
+    [SerializeField] public int width;
     [SerializeField] private int height;
-    [SerializeField] private float cellSize;
+    [SerializeField] public float cellSize;
     
     [HideInInspector]public Vector3[] vertices;
     [HideInInspector] public Mesh mesh;

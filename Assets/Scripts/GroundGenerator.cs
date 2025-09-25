@@ -6,7 +6,8 @@ public class GroundGenerator : PlaneGenerator
     
     [Header("terrain settings")]
     [SerializeField] private float terrainAmplitude;
-    [SerializeField] private float terrainFrequency;
+
+    [SerializeField] private Texture2D map;
     
     private Vector3[] baseVertices;
     void Awake()
@@ -21,19 +22,24 @@ public class GroundGenerator : PlaneGenerator
         for (int i = 0; i < vertices.Length; ++i)
         {
             Vector3 vertex = baseVertices[i];
-            
-            float noiseValue = 0f;
-            float amplitude = terrainAmplitude;
-            float frequency = terrainFrequency;
-            
-            for (int octave = 0; octave < 3; octave++)
+
+            if (map != null)
             {
-                noiseValue += Mathf.PerlinNoise(vertex.x * frequency, vertex.z * frequency) * amplitude;
-                frequency *= 2f;
-                amplitude *= 0.5f;
+                // Normalize x,z into [0,1] to sample the heightmap
+                float u = Mathf.InverseLerp(mesh.bounds.min.x, mesh.bounds.max.x, vertex.x);
+                float v = Mathf.InverseLerp(mesh.bounds.min.z, mesh.bounds.max.z, vertex.z);
+
+                // Get grayscale value from the heightmap
+                float height = map.GetPixelBilinear(u, v).grayscale;
+
+                vertex.y = height * terrainAmplitude + yLevel;
             }
-            
-            vertex.y += noiseValue * terrainAmplitude;
+            else
+            {
+                // fallback if no heightmap is assigned
+                vertex.y = 0f;
+            }
+
             vertices[i] = vertex;
         }
         
