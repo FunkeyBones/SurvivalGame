@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class GroundGenerator : PlaneGenerator
 {
-    [SerializeField] private float yLevel;
+    public float yLevel;
     
     [Header("terrain settings")]
-    [SerializeField] private float terrainAmplitude;
+    public float terrainAmplitude;
 
-    [SerializeField] private Texture2D map;
+    public Texture2D map;
     
     private Vector3[] baseVertices;
     void Awake()

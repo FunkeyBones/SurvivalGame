@@ -24,7 +24,7 @@ public class WaterGenerator : PlaneGenerator
         if (player.position.x >= transform.position.x - range && player.position.x <= transform.position.x + range &&
             player.position.z >= transform.position.z - range && player.position.z <= transform.position.z + range)
         {
-            AnimateWave();
+            //AnimateWave();
         }
     }
 

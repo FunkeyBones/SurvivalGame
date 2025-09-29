@@ -166,7 +166,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &195215417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &393006135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &498578416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -715,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainAmplitude
-      value: 28.88
+      value: 24.8
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainFrequency
@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainAmplitude
-      value: 28.88
+      value: 22.2
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainFrequency
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &1009577515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1381,7 +1381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainAmplitude
-      value: 28.88
+      value: 69.6
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainFrequency
@@ -1559,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainAmplitude
-      value: 28.88
+      value: 44.5
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainFrequency
@@ -1637,7 +1637,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!4 &1278106925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6813116555054780087, guid: d19891236b1e51541865261ba460b316, type: 3}
@@ -1765,7 +1765,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &1552825278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1844,7 +1844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainAmplitude
-      value: 28.88
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8202818497497331441, guid: 7a1aa24c30125774393717e27754734b, type: 3}
       propertyPath: terrainFrequency
@@ -1917,7 +1917,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!4 &1733818795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6813116555054780087, guid: d19891236b1e51541865261ba460b316, type: 3}
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!1001 &1894513539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2132,7 +2132,7 @@ MonoBehaviour:
   Objects:
   - {fileID: 8877172995432260536, guid: cb3a498390dbd634cb79a133e9a09541, type: 3}
   spawnChance: 0.5
-  heightThreshold: 1.88
+  heightThreshold: 0.22
 --- !u!4 &1983250646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6813116555054780087, guid: d19891236b1e51541865261ba460b316, type: 3}
